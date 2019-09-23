@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: follow_requests
+#
+#  id           :integer          not null, primary key
+#  sender_id    :integer
+#  recipient_id :integer
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
 require 'rails_helper'
 
 RSpec.describe FollowRequest, type: :model do

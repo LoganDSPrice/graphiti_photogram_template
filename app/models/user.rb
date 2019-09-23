@@ -1,3 +1,22 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                             :integer          not null, primary key
+#  email                          :string
+#  encrypted_password             :string           default(""), not null
+#  reset_password_token           :string
+#  reset_password_sent_at         :datetime
+#  remember_created_at            :datetime
+#  password                       :string
+#  username                       :string
+#  created_at                     :datetime         not null
+#  updated_at                     :datetime         not null
+#  sent_follow_requests_count     :integer
+#  received_follow_requests_count :integer
+#  own_photos_count               :integer
+#
+
 class User < ApplicationRecord
   # Direct associations
 

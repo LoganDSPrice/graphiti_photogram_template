@@ -81,6 +81,9 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    annotate (2.7.5)
+      activerecord (>= 3.2, < 7.0)
+      rake (>= 10.4, < 13.0)
     arbre (1.2.1)
       activesupport (>= 3.0.0)
     arel (8.0.0)
@@ -113,6 +116,8 @@ GEM
     diffy (3.3.0)
     erubi (1.8.0)
     execjs (2.7.0)
+    faker (2.4.0)
+      i18n (~> 1.6.0)
     ffi (1.11.1)
     formtastic (3.1.5)
       actionpack (>= 3.2.13)
@@ -309,12 +314,14 @@ PLATFORMS
 DEPENDENCIES
   activeadmin (= 1.2.1)
   activerecord-import
+  annotate
   bootstrap3-datetimepicker-rails (~> 4.17.43)
   bootstrap4-kaminari-views
   byebug
   coffee-rails (~> 4.2)
   devise
   draft_generators!
+  faker
   gmaps4rails
   jbuilder (~> 2.5)
   kaminari
@@ -339,4 +346,4 @@ DEPENDENCIES
   web_git!
 
 BUNDLED WITH
-   1.15.2
+   1.17.2
