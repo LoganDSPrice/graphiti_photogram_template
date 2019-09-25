@@ -56,7 +56,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails'
 gem 'shoulda-matchers'
 gem 'devise'
-gem 'draft_generators', git: 'https://github.com/firstdraft/draft_generators.git'
+gem 'draft_generators', git: 'https://github.com/firstdraft/draft_generators.git', branch: "lp-add-graphiti"
 gem 'web_git', github: 'firstdraft/web_git'
 gem 'activeadmin', '1.2.1'
 gem 'gmaps4rails'
