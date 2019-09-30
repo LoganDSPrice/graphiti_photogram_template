@@ -1,7 +1,7 @@
 namespace :dev do
   desc "Hydrate the database with some dummy data to make it easier to develop"
   task :prime => :environment do
-    usernames = ["alice", "bob", "carol"]
+    usernames = ["alice", "bob", "carol", "dana", "evan", "frank", "gillian", "heather", "iris"]
 
     users = []
 
@@ -88,6 +88,19 @@ namespace :dev do
     end
 
     puts "There are now #{Like.count} likes in the database."
+    # users = User.all
+    users.each do |user|
+      other_users = users - [user]
+      users_to_follow = other_users.sample(rand(other_users.count))
+      users_to_follow.each do |user_to_follow|
+        follow_request = FollowRequest.new
+        follow_request.sender_id = user.id
+        follow_request.recipient_id = user_to_follow.id
+        follow_request.save
+      end
+    end
+
+    puts "There are now #{FollowRequest.count} follow requests in the database."
 
   end
 end
