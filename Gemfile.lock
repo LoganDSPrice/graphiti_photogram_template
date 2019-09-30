@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/firstdraft/draft_generators.git
-  revision: cbdb15a3736028d2b96a7ba6eef2c8849ac9879d
+  revision: c6a7f383f19142b3055e46b1c50730abeaa1f9f1
   branch: lp-add-graphiti
   specs:
     draft_generators (0.0.3)
