@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/firstdraft/draft_generators.git
-  revision: 0ed95dca3f5123a0dfc8a7ab85d54602f12c7e77
+  revision: 3cb3c71d815c67ff3cd5a8edeb991c0344c67790
   branch: lp-add-graphiti
   specs:
     draft_generators (0.0.3)
@@ -10,6 +10,16 @@ GIT
       kaminari (~> 1.0)
       responders (~> 2.4)
       vandal_ui
+
+GIT
+  remote: https://github.com/firstdraft/graphiti-rails.git
+  revision: 5fba746fb1ac32ad4eec5d3bddff52aafba85a24
+  branch: add-controller-namespacing
+  specs:
+    graphiti-rails (0.2.2)
+      graphiti (~> 1.2)
+      rails (>= 5.0)
+      rescue_registry (~> 0.2.1)
 
 GIT
   remote: https://github.com/firstdraft/seed_dump.git
@@ -154,17 +164,13 @@ GEM
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     gmaps4rails (2.1.2)
-    graphiti (1.2.3)
+    graphiti (1.2.4)
       activesupport (>= 4.1)
       concurrent-ruby (~> 1.0)
       dry-types (>= 0.15.0, < 2.0)
       graphiti_errors (~> 1.1.0)
       jsonapi-renderer (= 0.2.0)
       jsonapi-serializable (~> 0.3.0)
-    graphiti-rails (0.2.1)
-      graphiti (~> 1.2)
-      rails (>= 5.0)
-      rescue_registry (~> 0.2.1)
     graphiti_errors (1.1.0)
       jsonapi-serializable (~> 0.1)
     has_scope (0.7.2)
@@ -369,6 +375,7 @@ DEPENDENCIES
   draft_generators!
   faker
   gmaps4rails
+  graphiti-rails!
   jbuilder (~> 2.5)
   kaminari
   listen (>= 3.0.5, < 3.2)
