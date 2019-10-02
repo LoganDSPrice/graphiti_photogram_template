@@ -13,8 +13,8 @@ GIT
 
 GIT
   remote: https://github.com/firstdraft/graphiti-rails.git
-  revision: 0dc0fd72b42256a118cc2821fe75ee4a10a3f89e
-  branch: make-install-reversible
+  revision: 5fba746fb1ac32ad4eec5d3bddff52aafba85a24
+  branch: add-controller-namespacing
   specs:
     graphiti-rails (0.2.2)
       graphiti (~> 1.2)
